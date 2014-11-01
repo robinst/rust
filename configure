@@ -1124,7 +1124,7 @@ do
     if [ ${do_reconfigure} -ne 0 ]
     then
         # LLVM's configure doesn't recognize the new Windows triples yet
-        $gnu_t=$(to_gnu_triple $t)
+        gnu_t=$(to_gnu_triple $t)
 
         msg "configuring LLVM for $gnu_t"
 
